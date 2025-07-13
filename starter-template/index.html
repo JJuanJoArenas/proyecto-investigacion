@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Analasis y desarrollo de software</title>
+  <!-- CSS  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/styleSegurity.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+  <nav class=" green darken-2" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"><strong>FORTALEZAS & DEBILIDADES DE LA IA EN LA PROGRAMACIÓN</strong></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#CAR" onclick="toggleText('Carac1')"></a></li>
+      </ul>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a>MENÚ</a></li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li><a href="#CAR" onclick="toggleText('Carac1')">FORTALEZAS</a></li>
+        <li><a href="#VD" onclick="toggleText('VDT')">DEBILIDADES</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <!-- =============== BANNER PRINCIPAL =============== -->
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br>
+      <!-- Carrusel de imágenes -->
+      <div class="carousel">
+        <a class="carousel-item"><img src="img/img3.jpg"></a>
+        <a class="carousel-item"><img src="img/carouse_2.png"></a>
+        <a class="carousel-item"><img src="img/carouse_3.png"></a>
+        <a class="carousel-item"><img src="img/carouse_4.png"></a>
+        <a class="carousel-item"><img src="img/carouse_5.png"></a>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <br>
+      <h4 style="color: green;">Análisis y desarrollo de software</h4>
+      <h4 style="color: green;">SENA CLEM TULUÁ</h4>
+      <br>
+      <div class="img-center">
+        <img src="img/sen-removebg-preview.png" alt="" ">
+      </div>
+    <div class="divider"></div>
+    <br>
+  </div>
+
+  <!-- =============== PARALLAX PRINCIPAL =============== -->
+  <div class="parallax-container" style="height: 400px; position: relative;">
+    <div class="parallax-text">
+      <h5>
+        <strong>
+          En la actualidad, La inteligencia Artifical revoluciono de manera multiple y
+          la programación no ha sido la excepción. A día de hoy es posible automatizar tareas complejas,
+          generar código de manera eficiente e incluso detectar errores, Sim embargo la IA
+          presenta limitaciones que deben tenerse en cuenta.
+        </strong>
+        <ul>
+          <li>
+            <strong>
+              En está pagina conoceremos de manera equilibrada tanto
+              las fortalezas como las debilidades de la IA en la programación.
+            </strong>
+          </li>
+        </ul>
+      </h5>
+    </div>
+
+  </div>
+
+  <!-- =============== CONTENIDO PRINCIPAL =============== -->
+
+
+      
+
+      <div id="CE" class="parallax-container" style="height: 400px; position: relative; color: aliceblue;">
+        <div class="parallax-text">
+          <div class="section scrollspy">
+            <a class="waves-effect" onclick="toggleText('CE1')">
+              <h4>🚀 Fortalezas</h4>
+            </a>
+            <h5 id="CE1" class="toggle-text">
+              <strong>
+                La IA puede analizar grandes volúmenes de código para identificar bugs, vulnerabilidades y malas
+                prácticas, disminuyendo el tiempo dedicado a debugging.
+              </strong>
+              <br>
+              <br>
+              <a class="waves-effect ver-mas" onclick="animarVerMas(this),toggleText('CE2'),mostrarParallax('C2P')">
+                <p>Abrir/Cerrar</p>
+              </a>
+            </h5>
+            <div class="parallax">
+              <img src="img/img2.jpg" alt="Imagen parallax">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div id="C2P" class="parallax-container oculto" style="height: 400px; position: relative;">
+        <div class="parallax-text">
+          <div class="section scrollspy">
+            <li></li>
+            <h5 id="CE2" class="toggle-text">
+              <strong>
+                1. Libera a los programadores de tareas repetitivas y tediosas, permitiendo que se concentren en
+                problemas complejos y en tareas de alto valor.
+              </strong>
+              <br> <br>
+              <strong>
+                2. La IA procesa y almacena grandes volúmenes de información rápidamente, facilitando la extracción de
+                insights clave para la toma de decisiones.
+              </strong>
+              <br><br>
+              <strong>
+                3. Permite a los desarrolladores enfocarse en problemas avanzados al automatizar tareas básicas y
+                acelerar la generación de prototipos.
+              </strong>
+              <br><br>
+              <strong>
+                4. La IA puede ser una gran aliada para capacitarse, ayudando a programadores junior con soluciones a
+                problemas típicos y fomentando el autoaprendizaje.
+              </strong>
+              <br>
+              <br>
+              <a class="waves-effect ver-mas" onclick="animarVerMas(this),toggleText('CE3'),mostrarParallax('C3P')">
+                <p>Abrir/Cerrar</p>
+              </a>
+            </h5>
+            <div class="parallax">
+              <img src="img/ImageMicro.png" alt="Imagen parallax">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="C3P" class="parallax-container oculto" style="height: 400px; position: relative;">
+        <div class="parallax-text">
+          <div class="section scrollspy">
+            <li></li>
+            <h5 id="CE3" class="toggle-text">
+              5. La IA puede ser una gran aliada para capacitarse, ayudando a programadores junior con soluciones a
+              problemas típicos y fomentando el autoaprendizaje.
+              <br><br>
+              6.Facilita la conversión de código entre diferentes lenguajes, por ejemplo de Python a JavaScript,
+              agilizando la adaptación de proyectos <br>
+              <br>
+            </h5>
+            <div class="parallax">
+              <img src="img/ImageMicro.png" alt="Imagen parallax">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="VD" class="parallax-container" style="height: 400px; position: relative;">
+        <div class="parallax-text">
+          <div class="section scrollspy">
+            <a class="waves-effect" onclick="toggleText('VDT')">
+              <h4>🤖❌ DEBILIDADES</h4>
+            </a>
+            <h5 id="VDT" class="toggle-text">
+              <strong>
+                1. La IA no siempre entiende el contexto real ni los requisitos específicos, lo que puede generar código
+                funcional pero mal alineado con necesidades.
+              </strong>
+              <br>
+              <br>
+              <strong>
+                2. Puede producir código con vulnerabilidades o dependencias obsoletas, sin prever problemas de
+                seguridad ni eficiencia<br>
+              </strong>
+              <br>
+              <strong>
+                3. Los sistemas basados en IA pueden ser objetivo de hackers que explotan vulnerabilidades para sabotear
+                datos o procesos.
+              </strong>
+              <br>
+              <br>
+              <a class="waves-effect ver-mas" onclick="animarVerMas(this),toggleText('VDT2'),mostrarParallax('VD2')">
+                <p>Abrir/Cerrar</p>
+              </a>
+            </h5>
+            <div class="parallax">
+              <img src="img/VentajasMicro.png" alt="Imagen parallax">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== SECCIÓN 3.1: Detalle del API Gateway (oculto) ========== -->
+      <div id="VD2" class="parallax-container oculto" style="height: 400px; position: relative;">
+        <div class="parallax-text">
+          <div class="section scrollspy">
+            <li></li>
+            <h5 id="VDT2" class="toggle-text">
+              <strong>
+                4. Implementar IA demanda inversiones considerables en infraestructura tecnológica y recursos humanos
+                especializados.
+              </strong>
+              <br><br>
+              <strong>
+                5. El entrenamiento de modelos de IA consume grandes cantidades de energía y datos, con impacto
+                ambiental y de tiempo.
+              </strong>
+              <br><br>
+              <strong>
+                6. No diseña ni innova arquitecturas complejas ni estrategias de software.
+              </strong>
+              <br><br>
+              <strong>
+                7. La IA es efectiva ejecutando funciones específicas y definidas con claridad<br>
+              </strong>
+              <br>
+
+            </h5>
+            <div class="parallax">
+              <img src="img/VentajasMicro.png" alt="Imagen parallax">
+            </div>
+          </div>
+        </div>
+      </div>
+
+   <div class="container">
+        <h1 class="titulo">GRÁFICOS DE BARRAS</h1>
+        
+        <div class="botones-nav">
+            <button class="btn btn-barras" onclick="mostrarGrafico('barras')">
+                Gráfico de Barras
+            </button>
+            <button class="btn btn-circular" onclick="mostrarGrafico('circular')">
+                Gráfico Circular
+            </button>
+            <button class="btn btn-ambos" onclick="mostrarGrafico('ambos')">
+                Ambos Gráficos
+            </button>
+        </div>
+
+        <!-- Gráfico de Barras -->
+        <div id="contenedor-barras" class="grafico-container">
+            <h2 class="grafico-titulo">Gráfico de Barras</h2>
+            <div class="canvas-container">
+                <canvas id="graficoBarras"></canvas>
+            </div>
+        </div>
+
+        <!-- Gráfico Circular -->
+        <div id="contenedor-circular" class="grafico-container">
+            <h2 class="grafico-titulo">Gráfico Circular</h2>
+            <div class="canvas-container">
+                <canvas id="graficoCircular"></canvas>
+            </div>
+        </div>
+
+        <!-- Ambos Gráficos -->
+        <div id="contenedor-ambos" class="dual-charts">
+            <div class="grafico-container activo">
+                <h2 class="grafico-titulo">Gráfico de Barras</h2>
+                <div class="canvas-container">
+                    <canvas id="graficoBarras2"></canvas>
+                </div>
+            </div>
+            <div class="grafico-container activo">
+                <h2 class="grafico-titulo">Gráfico Circular</h2>
+                <div class="canvas-container">
+                    <canvas id="graficoCircular2"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            
+            <p>
+               Teniendo en cuenta el análisis hecho, en la parte de la eficiencia podemos encontrar el rendimiento del tiempo y la optimización de procesos a la hora de desarrollar software, ya que teniendo en cuenta las respuestas de la encuesta, 
+               las personas creen que el uso de la inteligencia artificial puede reducir el tiempo de creación de aplicaciones, 
+               pero a su vez, en la ineficiencia, encontramos personas que piensan que la inteligencia artificial puede cometer errores y no cumple con los requisitos que una persona le pueda pedir,
+                así que en este sentido, las opiniones están muy divididas.
+            </p>
+        </div>
+    </div>
+
+    <!-- ============= Seccion de video ================================ -->
+
+  <div class="parallax-container" style="height: 400px; position: relative;">
+    <div class="parallax-text">
+      <h5>
+        <h4>💡REFERENTES</h4>
+        <a href="https://www.wichita.edu/services/mrc/OIR/AI/uses.php" target="_blank"
+              style="color: inherit; text-decoration: underline;">
+              <strong>✔️ https://www.wichita.edu/services/mrc/OIR/AI/uses.php</strong>
+            </a>
+            <br><br>
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S1546144019306994" target="_blank"
+              style="color: inherit; text-decoration: underline;">
+              <strong>✔️ https://www.sciencedirect.com/science/article/abs/pii/S1546144019306994</strong>
+            </a>
+      </h5>
+    </div>
+    
+  </div>
+  
+     <div id="CAR" class="parallax-container" style="height: 400px; position: relative;">
+        <div class="parallax-text">
+          <div class="section scrollspy">
+            <a class="waves-effect" style="text-align: left;" onclick="toggleText('Carac1')">
+              <h4>Conclusiones y Perspectivas Futuras</h4>
+            </a>
+            <h5 id="Carac1" class="toggle-text">
+              <strong>
+                Integrar IA para automatizar tareas, mejorar productividad y apoyar el aprendizaje continuo.
+              </strong>
+              <br><br>
+              <strong>
+                Combinar IA con supervisión humana para asegurar calidad, seguridad y alineación con objetivos.
+              </strong>
+              <br>
+              <br>
+              <strong>
+                Considerar costos y sostenibilidad en la adopción de IA para desarrollo de software.
+              </strong>
+              <br>
+              <strong>
+                La IA transformará la programación, pero su máximo potencial se alcanza con un enfoque equilibrado entre
+                automatización y creatividad humana.
+              </strong>
+
+              <br>
+
+             
+            </h5>
+
+            
+          </div>
+        </div>
+      </div>
+  
+    <div style="text-align: center;">
+      <h4 class="text-estilo">Sobre nosotros</h4>
+      <br>
+      <img src="img/s1.jpg" alt="" class="img-animada">
+      <br>
+      <div class="info-box">
+            
+            <p>
+               Somos un grupo de aprendices del programa Análisis y Desarrollo de Software del SENA CLEM Tuluá.
+               En esta pagina web queremos mostrarles cómo se maneja todo el tema de la Inteligencia Artificial,
+               hemos preparado este contenido visual, gráfico y textual para explicar este tema de forma clara y dinámica.
+               Esperamos que esta información nos ayude a reflexionar sobre todo como la IA puede ser nuestra gran ayuda, pero
+               también un grato reto de entender en el mundo del desarrollo de software.width: 800px;
+            </p>
+        </div>
+
+        <br>
+        <img src="img/sen-removebg-preview.png" alt="" style="width: 100px;">
+    </div>
+   
+    <!-- ================= SCRIPTS ================= -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/funtion.js"></script>
+</body>
+
+</html>

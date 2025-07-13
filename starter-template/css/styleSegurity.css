@@ -1,0 +1,456 @@
+/* ================== GLOBAL ================== */
+/* Oculta el desbordamiento horizontal en el cuerpo */
+body {
+  overflow-x: hidden;
+}
+
+/* ================== CARRUSEL ================== */
+.carousel {
+  width: 99.45vw;
+  max-width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  overflow: hidden;
+}
+.carousel .carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  
+}
+
+.carousel .carousel-item img:hover {
+  transform: scale(1.04) rotate(-1deg);
+  box-shadow: 0 8px 32px rgba(33,150,243,0.2);
+}
+
+.img-animada {
+  width: 800px;
+  height: auto;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 12px;
+}
+
+.img-animada:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-center{
+  text-align: center; 
+}
+.img-center img {
+    width: 150px; /* o cualquier tamaño que necesites */
+    height: auto; /* mantiene proporción */
+}
+
+
+.img-center:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+.volver-btn {
+  margin: 6px 0 0 6px;
+  color: #2e7d32 !important; /* green-text text-darken-2 */
+  background-color: white !important;
+}
+
+.titulo-navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 64px;
+  color: white;
+}
+.test-estilo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+/* ================== TÍTULOS ================== */
+h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2196f3;
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+a.waves-effect h4 {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ================== PARALLAX PRINCIPAL ================== */
+.parallax-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  height: 400px;
+  padding: 0;
+  background: none;
+}
+
+/* ================== PARALLAX DE SECCIONES (ANCHO COMPLETO, CUADRADO) ================== */
+.section .parallax-container {
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  position: relative;
+  height: 100vw;         /* Hace el contenedor cuadrado */
+  max-height: 900px;     /* Limita el alto en desktop */
+  min-height: 300px;
+  padding: 0;
+  background: none;
+  border-top: 4px solid #2196f3;
+  border-bottom: 4px solid #2196f3;
+}
+.section .parallax img {
+  width: 100vw;
+  height: 100vw;
+  min-width: 100vw;
+  min-height: 100vw;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  background: none;
+}
+
+/* ================== PARALLAX TEXTO ================== */
+.parallax-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 0 2px 16px #000, 0 1px 2px #2196f3;
+  z-index: 2;
+  text-align: center;
+  width: 90%;
+  padding: 30px 20px;
+  background: linear-gradient(90deg, rgba(33,150,243,0.7) 0%, rgba(24,28,36,0.8) 100%);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(33,150,243,0.2);
+  animation: fadeInDown 1s;
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translate(-50%, -70%);}
+  to   { opacity: 1; transform: translate(-50%, -50%);}
+}
+.parallax-text h4, .parallax-text h5 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.parallax-text p, .parallax-text h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 auto 10px auto;
+  color: #e3f2fd;
+  line-height: 1.6;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 600px) {
+  .parallax-container {
+    height: 220px !important;
+  }
+  .parallax-text {
+    padding: 10px 5px;
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  .section .parallax-container {
+    height: 220px !important;
+    min-height: 120px;
+    max-height: 100vw !important;
+  }
+  .section .parallax img {
+    height: 220px !important;
+  }
+}
+
+/* ================== BOTÓN VER MÁS ================== */
+.ver-mas-animado {
+  animation: verMasScale 0.3s;
+}
+@keyframes verMasScale {
+  0% { transform: scale(1); background: transparent; }
+  50% { transform: scale(1.12); background: rgba(33,150,243,0.12); }
+  100% { transform: scale(1); background: transparent; }
+}
+a.ver-mas {
+  display: inline-block;
+  background: #2196f3;
+  color: #fff !important;
+  font-weight: 700;
+  border-radius: 24px;
+  padding: 8px 24px;
+  margin: 10px 0 0 0;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.10);
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+  text-decoration: none !important;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+a.ver-mas:hover, a.ver-mas:focus {
+  background: #1565c0;
+  color: #e3f2fd !important;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+/* ================== ENLACES Y TOGGLE ================== */
+a.waves-effect {
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s;
+  margin-bottom: 8px;
+}
+a.waves-effect:hover {
+  color: #1565c0;
+}
+.toggle-text {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s, padding 0.5s;
+  background: linear-gradient(90deg, rgba(33,150,243,0.7) 0%, rgba(24,28,36,0.8) 100%);
+  color: #e3f2fd;
+  padding: 0 20px;
+  margin: 12px 0 20px 0;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.08);
+  line-height: 1.6;
+  word-break: break-word;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  height: 100%;            /* Asegura que tome toda la altura del nav */
+}
+
+
+.toggle-text.visible {
+  max-height: 500px;
+  opacity: 1;
+  padding: 16px 20px;
+  transition: max-height 0.5s ease, opacity 0.5s, padding 0.5s;
+}
+.toggle-text h5, .toggle-text h4 {
+  color: #bbdefb;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ================== UTILIDADES ================== */
+.oculto {
+  display: none !important;
+}
+li,
+.parallax-text li,
+.toggle-text li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* ================== VIDEO RESPONSIVE ================== */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Proporción 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100vw !important;
+  width: 100vw !important;
+  margin: 0 auto;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .botones-nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-barras {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .btn-barras:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .btn-circular {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .btn-circular:hover {
+            background-color: #27ae60;
+            transform: translateY(-2px);
+        }
+
+        .btn-ambos {
+            background-color: #9b59b6;
+            color: white;
+        }
+
+        .btn-ambos:hover {
+            background-color: #8e44ad;
+            transform: translateY(-2px);
+        }
+
+        .grafico-container {
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        .grafico-container.activo {
+            display: block;
+        }
+
+        .grafico-titulo {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .titulo{
+          font-weight: bold;
+        }
+
+        .canvas-container {
+            position: relative;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+
+        .canvas-container canvas {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .info-box {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 4px;
+        }
+
+        .info-box h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            color: #34495e;
+            line-height: 1.6;
+        }
+
+        .dual-charts {
+            display: none;
+        }
+
+        .dual-charts.activo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .dual-charts.activo {
+                grid-template-columns: 1fr;
+            }
+            
+            .botones-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 200px;
+            }
+        }
